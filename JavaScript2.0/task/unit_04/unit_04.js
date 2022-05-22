@@ -38,7 +38,7 @@ function f4() {
 		out.innerHTML = true;
 
 	} else {
-		out.innerHTML = 'div.out-4';
+		out.innerHTML = false;
 	}
 }
 

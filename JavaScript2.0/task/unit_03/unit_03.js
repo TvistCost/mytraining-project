@@ -59,7 +59,8 @@ document.querySelector('.b-3').onclick = f3;
 function f4() {
 	let a = +document.querySelector('.i-4').value;
 	let out = document.querySelector('.out-4');
-	if (a >= 18) {
+	let b = 2022 - a;
+	if (b >= 18) {
 		out.innerHTML = 1;
 	}
 	else {
