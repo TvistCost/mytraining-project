@@ -210,11 +210,12 @@ document.querySelector('.b-10').onclick = t10;
 
 
 function t11() {
-	let divs11 = document.querySelectorAll('.div-11');
-	let out = document.querySelector('.out-11');
-	for (let i = 0; i < divs11.length; i++) {
-		out.innerHTML += divs11[i].textContent + "_";
+	let out11 = "";
+	let divs = document.querySelectorAll(".div-11");
+	for (let i = 0; i < divs.length; i++) {
+		out11 = out11 + divs[i].innerHTML + "_";
 	}
+	document.querySelector(".out-11").innerHTML = out11;
 }
 
 document.querySelector('.b-11').onclick = t11;
