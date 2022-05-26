@@ -271,7 +271,7 @@ function t13() {
 	let i13 = document.querySelectorAll('.i-13');
 	let k = 0;
 	while (k <= i13.length) {
-		i13[k].value = k + 1;
+		i13[k].value = k;
 		k++;
 	}
 }
