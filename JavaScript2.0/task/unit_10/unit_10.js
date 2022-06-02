@@ -1,7 +1,7 @@
 // Task 1
 //Создайте массив ar1 содержащий строки, числа, булевы значения. Выведите его в .out-1. Вывод - по нажатию кнопки b-1
 
-let ar1 = ['Привет', 'Иван', '27', true, false];// переменную обьявляем здесь!!!!
+let ar1 = ['Привет', 'Иван', 27, true, false];// переменную обьявляем здесь!!!!
 
 function f1() {
 	let out = document.querySelector('.out-1');
@@ -175,8 +175,8 @@ let ar11 = [2, 3, 4, 5, 6, 7];
 
 function f11() {
 	let a = ar11[2];
-	ar11[2] = ar11[ar11.length - 2];
-	ar11[ar11.length - 2] = a;
+	ar11[2] = ar11[4];
+	ar11[4] = a;
 	let out = '';
 	for (let i = 0; i < ar11.length; i++) {
 		out += ar11[i] + ' ';
@@ -221,8 +221,8 @@ let ar13 = ['test', 'west', 'list', 'class', 'best'];
 
 function f13() {
 	let out = '';
-	for (let i = 0; i < ar12.length; i++) {
-		out += i + ' ' + ar12[i] + ' ';
+	for (let i = 0; i < ar13.length; i++) {
+		out += i + ' ' + ar13[i] + ' ';
 	}
 	document.querySelector('.out-13').innerHTML = out;
 }
