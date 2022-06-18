@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: local('☺'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'MyriadPro-Regular';
+  font-size: 2.4rem;
+  background: url(../img/backgraund-tab.png) no-repeat;
+  background-size: 100%;
+}
+a {
+  color: #000000;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #ddf3fa;
+  cursor: default;
+  background-color: #03A5DB;
+  border: 1px solid #ddd;
+  border-bottom-color: #dddddd;
+  border-bottom-color: transparent;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 4px 29px 0px 27px;
+  margin-left: 9px;
+  background-color: #fff;
+}
+.nav-tabs {
+  border-bottom: 1px solid #047ca0;
+  margin-left: 27px;
+  width: 594px;
+  border-radius: 1px;
+}
+.form-registration {
+  width: 629px;
+  margin-top: 19px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tab-content > .active {
+  display: block;
+  border: 24px solid #03a3d7;
+  border-radius: 8px;
+}
+.tab-pane {
+  background-color: #000000;
+  border-radius: 10px;
+  height: 409px;
+}
+
+input {
+  color: #fff;
+  width: 482px;
+  height: 62px;
+  border-radius: 7px;
+  border: none;
+  background-image: url(../img/Shape\ 4\ копия.png);
+}
+
+.input-tab {
+  margin-left: 43px;
+}
+.input-one{
+  margin-top: 70px;
+  margin-bottom: 29px;
+}
+
+.forgot-pass {
+  margin-top: 14px;
+}
+
+.forgot-pass a{
+  color: #c51f03;
+  margin-left: 67px;
+  font-size: 15px;
+}
+ .check-box {
+  font-size: 15px;
+}
+
+.check-box-input {
+  width: 12px;
+  height: 12px;
+  color: #6f6d6d;
+}
+
+#happy {
+  margin-top: 27px;
+  margin-left: 66px;
+}
+
+.button-sign {
+  width: 127px;
+  display: flex;
+  height: 41px;
+}
+
+a.button-sign {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(212,75,56); /* фон кнопки */
+    padding: .2em 1.4em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    margin-left: 494px;
+    margin-top: -25px;
+  } 
+  a.button-sign:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+  a.button-sign:active { background: rgb(152,15,0); } /* при нажатии */
+
+  img {
+    margin-left: 606px;
+    margin-top: -22px;
+  }

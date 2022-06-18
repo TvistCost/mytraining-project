@@ -1,0 +1,89 @@
+@media (min-width: 0px) {
+  .header-top_bar {
+    background-color: #ecf0f1;
+    margin: 0px;
+    padding: 5%;
+    text-align: center;
+  }
+}
+.border-box {
+  height: 1000px;
+  background-color: #bdc3c7;
+}
+.border-box_img {
+  display: inline;
+  float: left;
+  margin-left: 0 auto;
+}
+@media (min-width: 970px) {
+  img {
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1037px) {
+  img {
+    width: 170px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 969px) {
+  img {
+    width: 250px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 826px) {
+  img {
+    width: 230px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 540px) and (max-width: 768px) {
+  img {
+    width: 250px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 540px) and (max-width: 556px) {
+  img {
+    width: 230px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 0px) and (max-width: 540px) {
+  img {
+    width: 450px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+img:hover {
+  opacity: 0.5;
+}
+a:hover,
+a:hover,
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}

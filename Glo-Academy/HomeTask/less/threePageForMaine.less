@@ -1,0 +1,17 @@
+// Имена классов
+@listNames: ~"black", ~"red", ~"purple", ~"green", ~"blue";
+// Цвет
+@listColors: #000000, #ff0000, #800080, #008000, #0000ff;
+
+@listClassName: color;
+
+
+.generate-class( @indexPrefix: 1) when (@indexPrefix =< length(@listColors)){
+  @prefix: extract(@listNames, @indexPrefix);
+  @prefixColor: extract(@listColors, @indexPrefix);
+  .@{listClassName}-@{prefix} {
+    color: @prefixColor;
+  }
+  .generate-class(@indexPrefix + 1); 
+}
+.generate-class(); 

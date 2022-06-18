@@ -1,0 +1,135 @@
+// varibels  color button and shripht
+@btn-default_bgr: #e0e0e0;
+@btn-default_color: #333; 
+@btn-default-hvr_bgr: #e8e8e8;
+@btn-default-hvr_color: #333;
+ 
+@btn-two-type_bgr:  #3b83c0;
+@btn-two-type_color: #fff;
+@btn-two-type_hvr_bgr: #458ac6;
+@btn-two-type_hvr_color: #fff;
+
+@btn-three-type_bgr: #404245; 
+@btn-three-type_color: #fff;
+@btn-three-type_hvr_bgr: #1b1c1d;
+@btn-three-type_hvr_color: #fff;
+// varibels size button
+@btn-xs-font: 10px;
+@btn-xs-height: 20px;
+@btn-xs-padding: 2px 4px;
+
+@btn-default-font: 14px; 
+@btn-default-height: 20px;
+@btn-default-padding: 6px 12px;
+
+@btn-xl-font: 18px;
+@btn-xl-height: 20px;
+@btn-xl-padding: 10px 16px;
+
+// varibels border for button
+@btn-xs-border: 0px;
+@btn-xs-border-radius: 4px;
+
+@btn-default-border: 0px; 
+@btn-default-border-radius: 4px;
+
+@btn-xl-border: 0px;
+@btn-xl-border-radius: 4px;
+
+//  mixin for color buttons
+.btn-mixin-default() {
+  background: @btn-default_bgr;
+  color: @btn-default_color;
+}
+.btn-mixin-default_hover() {
+    background: @btn-default-hvr_bgr;
+    color: @btn-default-hvr_color;
+}
+.btn-mixin-two-type() {
+  background: @btn-two-type_bgr;
+  color: @btn-two-type_color;
+}
+.btn-mixin-two-type_hover() {
+    background: @btn-two-type_hvr_bgr;
+    color: @btn-two-type_hvr_color;
+}
+.btn-mixin-three-type() {
+  background: @btn-three-type_bgr;
+  color: @btn-three-type_color;
+}
+.btn-mixin-three-type_hover() {
+    background: @btn-three-type_hvr_bgr;
+    color: @btn-three-type_hvr_color;
+}
+
+// mixin for size buttons
+.btn-mixin-size_xs(){
+  font-size: @btn-xs-font;
+  line-height: @btn-xs-height;
+  padding: @btn-xs-padding; 
+  border-radius: @btn-xs-border-radius;
+  border: @btn-xs-border;
+}
+.btn-mixin-size_default(){
+  font-size: @btn-default-font;
+  line-height: @btn-default-height;
+  padding: @btn-default-padding; 
+  border-radius: @btn-default-border-radius;
+  border: @btn-default-border;
+}
+.btn-mixin-size_xl(){
+  font-size: @btn-xl-font;
+  line-height: @btn-xl-height;
+  padding: @btn-xl-padding; 
+  border-radius: @btn-xl-border-radius;
+  border: @btn-xl-border;
+}
+/* button from and after click*/
+.btn-default {
+  .btn-mixin-default;
+  .btn-mixin-size_default;
+  &:hover{
+    .btn-mixin-default_hover;
+  }
+}
+
+.btn-info{
+  .btn-mixin-two-type;
+  .btn-mixin-size_default;
+  &:hover{
+    .btn-mixin-two-type_hover 
+  }
+}
+
+.btn-secondary{
+  .btn-mixin-three-type;
+  .btn-mixin-size_default;
+  &:hover{
+    .btn-mixin-three-type_hover
+  }
+}
+
+/* Task 1 */
+
+.avarage(@a, @b, @c, @power){
+  @result: (sqrt(@a) + cos(@b) + max(@a @b @c) / pow(@c, @power));
+}
+
+.class {
+  .avarage(5px, 10px, 20px, 6);
+  padding: @result;
+}
+
+/* Task 2 */
+@color: #E12395;
+
+@color-lighten: lighten(@color, 25%);
+@color-darken: darken(@color, 25%);
+
+.color-link {
+  border-color: @color;
+  color: @color-darken;
+  &:hover{
+  background-color: @color-lighten;
+}
+}

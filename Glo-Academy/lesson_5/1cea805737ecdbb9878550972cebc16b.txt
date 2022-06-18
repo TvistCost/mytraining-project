@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h4>Глава 4</h4>
+    <p>
+      <s
+        >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque
+        adipisci quisquam harum vero blanditiis, voluptatibus laborum
+        repellendus voluptatum non quidem qui distinctio, ut sunt natus. Ea
+        minima recusandae sed fuga.</s
+      >
+    </p>
+    <a href="contens.html">Оглавление</a>
+  </body>
+</html>

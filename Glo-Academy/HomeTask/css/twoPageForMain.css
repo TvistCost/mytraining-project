@@ -1,0 +1,52 @@
+/* button from and after click*/
+.btn-default {
+  background: #e0e0e0;
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 0px;
+}
+.btn-default:hover {
+  background: #e8e8e8;
+  color: #333333;
+}
+.btn-info {
+  background: #3b83c0;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 0px;
+}
+.btn-info:hover {
+  background: #458ac6;
+  color: #ffffff;
+}
+.btn-secondary {
+  background: #404245;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 0px;
+}
+.btn-secondary:hover {
+  background: #1b1c1d;
+  color: #ffffff;
+}
+/* Task 1 */
+.class {
+  padding: 1.39699676px;
+}
+/* Task 2 */
+.color-link {
+  border-color: #e12395;
+  color: #75104c;
+}
+.color-link:hover {
+  background-color: #f093cb;
+}

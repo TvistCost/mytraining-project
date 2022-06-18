@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans SemiBold";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.contact-info {
+  position: absolute;
+  width: 250px;
+  top: 20px;
+  left: 420px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  z-index: 500;
+}
+
+.contact-info h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.contact-info p {
+  margin-bottom: 40px;
+}
+
+ymaps[class$="-inner-panes"]:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 350px;
+  width: 380px;
+  height: 430px;
+  background-color: #c60b0b;
+  z-index: 1000;
+}
+
+.fire-safety-technologies {
+  width: 270px;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 16px;
+}
+.fire-safety-technologies img {
+  /* margin-left: 150px; */
+  float: left;
+}
+.fire-header {
+  margin-left: 90px;
+  text-align: left;
+}
+
+.fire-safetyt-certification {
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+.address-phone {
+  font-family: "OpenSans SemiBold";
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.addres-phone_item {
+  font-size: 22px;
+}

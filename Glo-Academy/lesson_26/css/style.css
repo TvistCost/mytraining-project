@@ -1,0 +1,10 @@
+.starter-template {
+  padding-top: 10rem;
+}
+
+/* Базовые настройки */
+
+body {
+  background-color: black;
+  color: #fff;
+}

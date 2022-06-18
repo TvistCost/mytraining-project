@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Задание к 18 уроку</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main-tab.css" />
+  </head>
+  <body>
+    <div class="form-registration">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#login" aria-controls="login" role="tab" data-toggle="tab"
+            >Вход</a
+          >
+        </li>
+        <li role="presentation" class="tab-register">
+          <a
+            href="#register"
+            aria-controls="register"
+            role="tab"
+            data-toggle="tab"
+            >Регистрация</a
+          >
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="login">
+          <input class="input-tab input-one" type="text" /><br />
+          <input class="input-tab input-two" type="password" />
+          <p class="forgot-pass"><a href="#">Забыли пароль?</a></p>
+          <input
+            class="check-box-input"
+            id="happy"
+            type="checkbox"
+            value="yes"
+          />
+          <label for="happy" class="check-box">Напомнить мне</label>
+          <a href="#" class="button-sign">Войти</a>
+          <img src="img/flaps_left.png" alt="ddd" />
+        </div>
+        <div role="tabpanel" class="tab-pane" id="register">2</div>
+      </div>
+    </div>
+    <!-- It is necessary to include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script>
+      $("#myTabs a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+      });
+      $('#myTabs a[href="#profile"]').tab("show"); // Select tab by name
+      $("#myTabs a:first").tab("show"); // Select first tab
+      $("#myTabs a:last").tab("show"); // Select last tab
+      $("#myTabs li:eq(2) a").tab("show"); // Select third tab (0-indexed)
+    </script>
+  </body>
+</html>

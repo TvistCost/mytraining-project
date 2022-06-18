@@ -1,0 +1,25 @@
+/* Ключевые кадры анимации */
+@keyframes move {
+  /* Первый кадр анимации */
+  from {
+    margin-left: 0;
+  }
+  /* Промежуточные кадры анимации */
+  10% {
+    margin-left: 20px;
+  }
+  /* Конечный кадр анимации */
+  to {
+    margin-left: 400px;
+  }
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.13, 1.13, 0.93, 0.2);
+  animation-iteration-count: 2;
+}

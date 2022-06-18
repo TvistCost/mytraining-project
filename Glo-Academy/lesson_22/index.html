@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Название сайта</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <section class="maps">
+      <div class="container">
+        <div class="row">
+          <div id="map" style="width: 100%; height: 424px">
+            <div class="contact">
+              <div class="contact-info">
+                <h2>Контакты</h2>
+                <p>
+                  г. Москва,<br />
+                  Варшавское шоссе, дом 16, корпус 1, офис №8
+                </p>
+                <p>200 от м. Театральная</p>
+                <p>+7 (499) 409-87-25</p>
+                <p>info@vashsite.ru</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1 fire-safety-technologies">
+            <img src="img/logo.png" alt="logo" />
+            <p class="fire-header">
+              Технологии<br />Пожарной<br />
+              Безопасности
+            </p>
+          </div>
+          <div class="col-md-3 col-md-offset-1 fire-safetyt-certification">
+            <p>
+              Сертификация пожарной безопасности Работаем по России и странам
+            </p>
+          </div>
+          <div class="col-md-3 col-md-offset-1 address-phone">
+            <p class="addres-phone_item">+7 (499) 409-87-25</p>
+            <p>
+              г. Москва, Варшавское шоссе,<br />
+              дом 16, корпус 1, офис №8
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map(
+            "map",
+            {
+              center: [55.862854, 37.429801],
+              zoom: 17,
+            },
+            {
+              searchControlProvider: "yandex#search",
+            }
+          ),
+          // Создаём макет содержимого.
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          ),
+          myPlacemark = new ymaps.Placemark(
+            myMap.getCenter(),
+            {
+              hintContent: "Собственный значок метки",
+              balloonContent: "Это красивая метка",
+            },
+            {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: "default#image",
+              // Своё изображение иконки метки.
+              iconImageHref: "img/location.png",
+              // Размеры метки.
+              iconImageSize: [45, 64],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-20, -64],
+            }
+          );
+
+        myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable("scrollZoom");
+      });
+    </script>
+  </body>
+</html>

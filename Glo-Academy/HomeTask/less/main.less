@@ -1,0 +1,65 @@
+
+  .header-top_bar{
+  @media (min-width: 0px){
+      background-color: @header-color; 
+      margin: 0px;
+      padding: 5%;
+      text-align: center;
+    } 
+  }  
+
+  @header-color: #ecf0f1;
+  @border-color: #bdc3c7;
+  .border-box {
+    height: 1000px;
+    background-color: @border-color;
+  }
+  .border-box_img{
+    display: inline;
+    float: left;
+    margin-left: 0 auto;
+  }
+.margins() {
+  margin-left: @margin-left;
+  margin-bottom: @margin-bottom;
+}
+
+@margin-left: 20px;
+@margin-bottom: 20px;
+img{
+  @media (min-width: 970px){
+    width: 150px;
+    .margins;
+  }
+  @media (min-width: 1037px){
+    width: 170px;
+    .margins;
+  }
+  @media (min-width: 768px) and (max-width: 969px){
+    width: 250px;
+    .margins;
+  }
+  @media (min-width: 768px) and (max-width: 826px){
+    width: 230px;
+    .margins;
+  }
+  @media (min-width: 540px) and (max-width: 768px){
+    width: 250px;
+    .margins;
+  }
+  @media (min-width: 540px) and (max-width: 556px){
+    width: 230px;
+    .margins;
+  }
+  @media (min-width: 0px) and (max-width: 540px){
+    width: 450px;
+    .margins;
+  }
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+  
+
+  

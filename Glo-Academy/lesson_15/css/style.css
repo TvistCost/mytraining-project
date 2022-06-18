@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+.image {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  height: 200px;
+}
+.image-one {
+  opacity: 0.8;
+  background-color: #000;
+  background: url(../img/1.jpg) center no-repeat;
+  background-size: cover;
+}
+.image-two {
+  opacity: 0.8;
+  background: url(../img/2.jpg) center no-repeat;
+  background-size: cover;
+}
+.image-three {
+  opacity: 0.8;
+  background: url(../img/3.jpg) center no-repeat;
+  background-size: cover;
+}
+.image-four {
+  opacity: 0.8;
+  background: url(../img/4.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.image-one:hover {
+  opacity: 1;
+  background-color: #000;
+}
+.image-two:hover {
+  opacity: 1;
+  background-color: #000;
+}
+.image-three:hover {
+  opacity: 1;
+  background-color: #000;
+}
+.image-four:hover {
+  opacity: 1;
+  background-color: #000;
+}
+
+.button-one {
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  padding: 0.8em 1em calc(0.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64, 199, 129);
+  box-shadow: 0 -3px rgb(53, 167, 110) inset;
+  transition: 0.2s;
+}
+
+.button-one:hover {
+  background: rgb(53, 167, 110);
+}
+.button-one:active {
+  background: rgb(33, 147, 90);
+  box-shadow: 0 3px rgb(33, 147, 90) inset;
+}
+.button-two {
+  display: inline-block;
+  color: white;
+  padding: 0.5em 2em;
+  border: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #fdbe33 #000 #d77206;
+  border-radius: 6px;
+  background: linear-gradient(#f3ae0f, #e38916) #e38916;
+  transition: 0.2s;
+}
+.button-two:hover {
+  background: rgb(250, 180, 29);
+}
+.button-two:active {
+  background: rgb(248, 188, 23);
+  box-shadow: 0 3px rgb(238, 152, 23) inset;
+}
+

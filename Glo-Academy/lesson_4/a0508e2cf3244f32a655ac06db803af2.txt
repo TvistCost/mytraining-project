@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Глава 3</h3>
+    <p><u>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos debitis ratione illo libero fugit magnam, sed iste nihil, voluptatem nesciunt aut, et unde. Doloribus accusamus sapiente libero unde deleniti ad quia saepe ipsum sint incidunt. Exercitationem, deleniti. Dolores, odio! Itaque est ab magnam et fugit? Reprehenderit sed rerum dolorum quas?</u></p>
+  <a href="contens.html">Оглавление</a>
+</body>
+</html>
