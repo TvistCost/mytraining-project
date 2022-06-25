@@ -9,7 +9,7 @@ function f1() {
 		"five": 20
 	};
 	document.querySelector('.out-1').innerHTML = a1.two;
-	//return ...
+	return a1.two;
 }
 
 document.querySelector('.b-1').onclick = f1;
@@ -72,8 +72,8 @@ let a4 = {
 };
 function f4() {
 	let out = '';
-	for (const key in a4) {
-		out += key + ' ' + a4[key] + '<br>';
+	for (let key in a4) {
+		out += key + ' ' + a4[key] + ' <br>';
 	}
 	return out;
 }
