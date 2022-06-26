@@ -48,7 +48,7 @@ document.querySelector('.b-3').addEventListener('click', f3);
 function f4() {
 	let out4 = document.querySelectorAll('.out-4');
 	for (let i = 0; i < out4.length; i++) {
-		out4[i].innerHTML = 4;
+		out4[i].innerHTML += 4;
 		console.log(out4[i]);
 	}
 }
@@ -86,8 +86,9 @@ function f6() {
 			a.push(a6[i][k]);
 		}
 	}
-	console.log(a);
-	document.querySelector('.out-6').innerHTML = a;
+	a6 = a;
+	console.log(a6);
+	document.querySelector('.out-6').innerHTML = a6.join(' ');
 }
 
 document.querySelector('.b-6').addEventListener('click', f6);
@@ -136,13 +137,13 @@ document.querySelector('.b-8').addEventListener('click', () => {
 let a9 = [[4, 3, 2], [2, 5], [0, 0, 0, 0, 0]];
 
 function f9() {
-	let out = 0;
-	for (const item of a9) {
-		if (item.length > a9[0].length) {
-			out = item.length - 1;
+	let max = a9[0].length;
+	for (let i = 0; i < a9.length; i++) {
+		if (max < a9[i].length) {
+			max = a9[i].length - 1;
 		}
 	}
-	return out;
+	return max;
 }
 
 document.querySelector('.b-9').addEventListener('click', () => {
