@@ -1,7 +1,10 @@
 {
-	"folders": [
+  "folders": [
 		{
-			"path": "."
+			"path": "JavaScript2.0"
 		}
-	]
+	],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "app"
+  }
 }
